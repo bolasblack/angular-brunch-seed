@@ -1,0 +1,52 @@
+{
+  "name": "angular-brunch-seed",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2",
+    "bootstrap": "~3.0.0-rc1",
+    "angular": "~1.2.0-rc.2",
+    "angular-route": "~1.2.0-rc.2",
+    "angular-cookies": "~1.2.0-rc.2",
+    "angular-resource": "~1.2.0-rc.2",
+    "angular-animate": "~1.2.0-rc.2",
+    "angular-sanitize": "~1.2.0-rc.2",
+    "angular-locale_zh": "http://code.angularjs.org/1.2.0-rc.2/i18n/angular-locale_zh-hans-cn.js",
+    "angular-scenario": "~1.2.0-rc.2",
+    "angular-mocks": "1.2.0-rc.2"
+  },
+  "overrides": {
+    "angular": {
+      "dependencies": {
+        "jquery": "1.10.2"
+      }
+    },
+    "angular-locale_zh": {
+      "dependencies": {
+        "angular": "*"
+      }
+    },
+    "bootstrap": {
+      "main": [
+        "js/transition.js",
+        "js/tooltip.js",
+        "js/affix.js",
+        "js/alert.js",
+        "js/button.js",
+        "js/carousel.js",
+        "js/collapse.js",
+        "js/dropdown.js",
+        "js/modal.js",
+        "js/popover.js",
+        "js/scrollspy.js",
+        "js/tab.js"
+      ]
+    }
+  }
+}

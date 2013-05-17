@@ -1,0 +1,39 @@
+{
+  "author": "c4605",
+  "name": "app",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "http://gezbox.com/app/",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.10 || 0.8 || 0.9"
+  },
+  "scripts": {
+    "start": "make server"
+  },
+  "dependencies": {
+    "javascript-brunch": "~1.5.1",
+    "coffee-script-brunch": "~1.7.0",
+    "coffeelint-brunch": "~1.5.0",
+    "css-brunch": "~1.5.0",
+    "stylus-brunch": "~1.6.0",
+    "less-brunch": "~1.5.0",
+    "uglify-js-brunch": "~1.5.0",
+    "clean-css-brunch": "~1.5.0",
+    "auto-reload-brunch": "~1.6.1",
+    "brunch": "~1.7.0"
+  },
+  "devDependencies": {
+    "karma": "~0.10.2",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-coffee-preprocessor": "~0.1.0",
+    "karma-mocha": "~0.1.0",
+    "karma-chai": "0.0.1"
+  },
+  "readmeFilename": "README.md",
+  "main": "app/app.coffee",
+  "license": "MIT"
+}
