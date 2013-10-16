@@ -11,15 +11,15 @@
   "dependencies": {
     "jquery": "1.10.2",
     "bootstrap": "~3.0.0-rc1",
-    "angular": "~1.2.0-rc.2",
-    "angular-route": "~1.2.0-rc.2",
-    "angular-cookies": "~1.2.0-rc.2",
-    "angular-resource": "~1.2.0-rc.2",
-    "angular-animate": "~1.2.0-rc.2",
-    "angular-sanitize": "~1.2.0-rc.2",
-    "angular-locale_zh": "http://code.angularjs.org/1.2.0-rc.2/i18n/angular-locale_zh-hans-cn.js",
-    "angular-scenario": "~1.2.0-rc.2",
-    "angular-mocks": "1.2.0-rc.2"
+    "angular": "~1.2.0-rc.3",
+    "angular-scenario": "~1.2.0-rc.3",
+    "angular-route": "~1.2.0-rc.3",
+    "angular-cookies": "~1.2.0-rc.3",
+    "angular-resource": "~1.2.0-rc.3",
+    "angular-animate": "~1.2.0-rc.3",
+    "angular-sanitize": "~1.2.0-rc.3",
+    "angular-mocks": "~1.2.0-rc.3",
+    "angular-locale_zh": "http://code.angularjs.org/1.2.0-rc.3/i18n/angular-locale_zh-hans-cn.js"
   },
   "overrides": {
     "angular": {
@@ -48,5 +48,8 @@
         "js/tab.js"
       ]
     }
+  },
+  "resolutions": {
+    "angular": "~1.2.0-rc.3"
   }
 }
