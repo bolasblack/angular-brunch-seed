@@ -5,6 +5,21 @@ startsWith = (string, substring) ->
 
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
+  plugins:
+    jade:
+      pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
+
+    coffeelint:
+      pattern: /^app\/.*\.coffee$/
+      # options doc : http: //www.coffeelint.org/#options
+      options:
+        max_line_length: level: "ignore"
+        indentation: level: "ignore"
+        no_backticks: level: "ignore"
+        arrow_spacing: level: "error"
+        no_empty_param_list: level: "error"
+        no_stand_alone_at: level: "error"
+
   modules:
     definition: false
     wrapper: false
@@ -33,20 +48,6 @@ exports.config =
         'css/app.css': /^(app|vendor)/
     templates:
       joinTo: 'js/templates.js'
-
-  plugins:
-    jade:
-      pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
-
-    coffeelint:
-      pattern: /^app\/.*\.coffee$/
-      # options doc : http: //www.coffeelint.org/#options
-      options:
-        max_line_length: level: "ignore"
-        no_backticks: level: "ignore"
-        indentation:
-          value: 2
-          level: "ignore"
 
   sourceMaps: true
 
