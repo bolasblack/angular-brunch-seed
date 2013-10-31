@@ -20,6 +20,10 @@ exports.config =
         no_empty_param_list: level: "error"
         no_stand_alone_at: level: "error"
 
+  imageoptimizer:
+    smushit: false # if false it use jpegtran and optipng, if set to true it will use smushit
+    path: 'images' # your image path within your public folder
+
   modules:
     definition: false
     wrapper: false
