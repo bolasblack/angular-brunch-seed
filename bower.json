@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "jquery": "1.10.2",
-    "bootstrap": "~3.0.0-rc1",
+    "bootstrap": "~3.0.1",
     "angular": "~1.2.0-rc.3",
     "angular-scenario": "~1.2.0-rc.3",
     "angular-route": "~1.2.0-rc.3",
@@ -35,7 +35,6 @@
     "bootstrap": {
       "main": [
         "js/transition.js",
-        "js/tooltip.js",
         "js/affix.js",
         "js/alert.js",
         "js/button.js",
