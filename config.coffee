@@ -9,6 +9,12 @@ exports.config =
     jade:
       pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
 
+    static_jade:
+      rootPath: "app/assets"
+      path: [/app[\/\\]assets/]
+      extension: ".jade"
+      asset: "public"
+
     coffeelint:
       pattern: /^app\/.*\.coffee$/
       # options doc : http: //www.coffeelint.org/#options
@@ -29,6 +35,8 @@ exports.config =
     wrapper: false
 
   conventions:
+    assets: /^app[\/\\]assets[\/\\](?!.+\.jade)/
+    vendor: /^(bower_components|vendor)[\/\\]/
     ignored: (filePath) ->
       ignoreRE = /^vendor\/(?!scripts|styles|assets)/
       ignoreRE.test(filePath) or startsWith path.basename(filePath), '_'
