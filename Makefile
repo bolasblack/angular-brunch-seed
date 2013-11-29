@@ -1,4 +1,4 @@
-.PHONY : server build optimize update clean
+.PHONY : server build optimize clean unit.test
 
 brunchPath=node_modules/.bin/brunch
 
@@ -27,15 +27,15 @@ build : clean
 optimize : clean
 	@echo "开始构建并压缩项目文件..."
 	@$(allowBreak)\
-	$(brunchPath) build --optimize;\
+	$(brunchPath) build --env production;\
 	if [ $$? -ne 0 -a $$? -ne 127 ]; then\
 		make optimize;\
 	fi;
 
-unittest :
-	@node_modules/.bin/karma start test/test.unit.conf.coffee
-
 clean :
 	@echo "开始清理目录..."
 	@-rm -rf public
+
+test.unit :
+	@node_modules/.bin/karma start test/test.unit.conf.coffee
 
