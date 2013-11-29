@@ -19,7 +19,8 @@
     "angular-animate": "~1.2.3",
     "angular-sanitize": "~1.2.3",
     "angular-mocks": "~1.2.3",
-    "angular-locale_zh": "http://code.angularjs.org/1.2.3/i18n/angular-locale_zh-hans-cn.js"
+    "angular-locale_zh": "http://code.angularjs.org/1.2.3/i18n/angular-locale_zh-hans-cn.js",
+    "lodash": "~2.4.0"
   },
   "overrides": {
     "angular": {
